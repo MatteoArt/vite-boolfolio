@@ -37,16 +37,17 @@ export default {
 <template>
   <h1 class="text-start mt-2 text-success-emphasis">developerFolio</h1>
 
-  <div class="container mt-4 mb-2">
-    <h2>Welcome, guest</h2>
-  </div>
+  <!-- qui andrà il contenuto di ogni pagina -->
+  <router-view></router-view>
+
+  <!--
   <h2 class="mt-3 text-center text-info-emphasis">Projects</h2>
   <div class="container-md mt-2 mb-4">
     <div class="row gy-3">
       <ProjectCard v-for="project in projects"
       :projectData="project" :key="project.id"></ProjectCard>
     </div>
-  </div>
+  </div>-->
 </template>
 
 <style></style>

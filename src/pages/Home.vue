@@ -13,9 +13,9 @@ export default {
             linguaggi e tecnologie. Da progetti front-end, back-end a progetti full stack.
         </p>
         <div class="text-center mt-4">
-            <button type="button" class="btn btn-primary btn-lg">
+            <router-link :to="{ name: 'projects' }" class="btn btn-primary btn-lg">
                 Scopri di più
-            </button>
+            </router-link>
         </div>
 
     </div>

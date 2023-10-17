@@ -22,8 +22,6 @@ export default {
 
                     //salvo i dati nella variabile projects
                     this.projects = ris;
-
-                    console.log(this.projects);
                 })
         }
     },
@@ -36,7 +34,7 @@ export default {
 
 <template>
     <h2 class="mt-3 text-center text-info-emphasis">Projects</h2>
-    <div class="container-md mt-2 mb-4">
+    <div class="container-md mt-3 mb-4">
         <div class="row gy-3">
             <ProjectCard v-for="project in projects" :projectData="project" :key="project.id"></ProjectCard>
         </div>

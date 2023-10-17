@@ -1,17 +1,22 @@
 <script>
 
-export default {
+import TheNavbar from './components/TheNavbar.vue';
 
+export default {
+  components: {
+    TheNavbar
+  }
 }
 </script>
 
 <template>
-  <h1 class="text-start mt-2 text-success-emphasis">developerFolio</h1>
+  
+  <TheNavbar></TheNavbar>
 
   <!-- qui andrà il contenuto di ogni pagina -->
   <router-view></router-view>
 
-  
+
 </template>
 
 <style></style>

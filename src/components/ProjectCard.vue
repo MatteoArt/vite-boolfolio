@@ -26,7 +26,11 @@ export default {
         <div class="card h-100">
             <img :src="getImagePath(projectData.img)" class="card-img-top" alt="img-project">
             <div class="card-body">
-                <h3 class="card-title">{{ projectData.title }}</h3>
+                <router-link class="text-decoration-none" :to="{ name: 'project.show', params: { id: projectData.id } }">
+                    <h3 class="card-title">
+                        {{ projectData.title }}
+                    </h3>
+                </router-link>
                 <span class="badge text-bg-warning">
                     {{ projectData.type.name }}
                 </span>

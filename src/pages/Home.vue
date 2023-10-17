@@ -12,7 +12,15 @@ export default {
             In questo sito puoi trovare una raccolta di progetti che ho creato con diversi
             linguaggi e tecnologie. Da progetti front-end, back-end a progetti full stack.
         </p>
+        <div class="text-center mt-4">
+            <button type="button" class="btn btn-primary btn-lg">
+                Scopri di più
+            </button>
+        </div>
+
     </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+
+</style>

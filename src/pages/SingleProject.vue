@@ -36,9 +36,27 @@ export default {
         <p>
             {{ singleProject.description }}
         </p>
-        <div class="w-50" v-if="singleProject.img">
-            <img class="img-thumbnail" :src="getImagePath(singleProject.img)" alt="img-project">
+        <div class="d-flex column-gap-5">
+            <div class="w-50" v-if="singleProject.img">
+                <img class="img-thumbnail" :src="getImagePath(singleProject.img)" alt="img-project">
+            </div>
+            <div>
+                <div>Linguaggi/tecnologie:</div>
+                <span v-for="technology in singleProject.technologies" class="badge text-bg-info me-2">
+                    {{ technology.name }}
+                </span>
+                <div class="mt-4">
+                    <a :href="singleProject.repository" class="btn btn-outline-success" target="_blank">
+                        Repository
+                    </a>
+                    <a v-if="singleProject.page_project" :href="singleProject.page_project" 
+                    class="btn btn-outline-info ms-3" target="_blank">
+                        Pagina del progetto
+                    </a>
+                </div>
+            </div>
         </div>
+
     </div>
 </template>
 

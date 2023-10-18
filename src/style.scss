@@ -1,2 +1,7 @@
 @import "bootstrap";
 @import "@fortawesome/fontawesome-free/css/all.min.css";
+
+nav li a.router-link-active {
+    color: #F2B707 !important;
+    font-weight: 600;
+}
